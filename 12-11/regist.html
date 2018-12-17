@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>注册</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="login">
+
+    <header class="header lineflex">
+        <p><img src="images/back.png" alt="">返回</p>
+        <p><img src="images/more.png" alt=""></p>
+    </header>
+
+    <section class="regist">
+        <div class="recommend_id">
+            <input type="text" value="">
+        </div>
+        <div class="user_id">
+            <input type="text" value="">
+        </div>
+        <div class="regist_pwd">
+            <input type="password" value="">
+        </div>
+        <div class="verfiy">
+            <input type="text" value="">
+        </div>
+        <div class="verfiy_img">
+            <img src="images/verify_test.png" alt="">
+            <p>看不清楚，换一个</p>
+        </div>
+        <div class="regist_btn">注册</div>
+		<div class="back_login">已经有账号了，返回登录</div>
+    </section>
+
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0]
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+    </script>
+</body>
+
+</html>

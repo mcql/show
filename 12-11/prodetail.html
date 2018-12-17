@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>商品详情</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="shop">
+
+    <header class="header lineflex">
+        <p><img src="images/back.png" alt="">返回</p>
+        <p style="font-size: .48rem;">个人中心</p>
+        <p><img src="images/more.png" alt=""></p>
+    </header>
+
+    <section>
+        <div class="bigpic">
+            <img src="images/prodpictest.png" alt="">
+            <div style="overflow:hidden">
+                <h5>产品名称8个字符</h5>
+                <p class="zl">种类</p>
+            </div>
+            <div class="prodtn">
+                <div class="goodsbtn">宝贝</div>
+                <div class="detailbtn">详情</div>
+            </div>
+        </div>
+        <div class="introduce">
+            <ul>
+                <li><img src="images/type.png" alt=""><span>品类：饰品</span></li>
+                <li><img src="images/youxuan.png" alt=""><span>优选商品</span></li>
+                <li><img src="images/kuaidi.png" alt=""><span>顺丰速递</span></li>
+            </ul>
+        </div>
+
+        <div class="productdetail">
+            <div class="pdetail">
+                <div class="productprice">
+                    <h5 class="productprice1">¥18.66</h5>
+                    <p class="productprice2">价格 ￥9800</p>
+                    <p class="productprice3">库存：99</p>
+                </div>
+                <div class="goodshare">
+                    <img src="images/share_goods.png" alt=""><p>分享</p>
+                </div>
+            </div>
+            <div class="canshu">
+                <div class="canshuline"></div>基本参数
+                <div class="canshunum">
+                    <ul>
+                        <li><p>重量：</p><p>50分</p></li>
+                        <li><p>净度：</p><p>VS/微瑕</p></li>
+                        <li><p>色泽：</p><p>F-G/优白</p></li>
+                        <li><p>款式：</p><p>叠爱</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="canshuline"></div>产品详情
+            </div>
+        </div>
+        <div class="productimg">
+            <img src="images/prodimgdetail.png" alt="">
+        </div>
+        <div class="buybtn">立即下单</div>
+    </section>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0]
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+    </script>
+</body>
+
+</html>

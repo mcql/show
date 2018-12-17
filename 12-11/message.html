@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>购买成功</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="shop">
+
+    <header class="header lineflex">
+        <p><img src="images/back.png" alt="">返回</p>
+        <p><img src="images/more.png" alt=""></p>
+    </header>
+
+    <section>
+        <!-- <ul class="messagelists">
+            <li>
+                <div>
+                    <div class="messagetit">
+                        <img src="images/notread.png" class="readstate" alt="">
+                        <p><span>[未读]</span> 申请代理审核</p>
+                    </div>
+                    <p class="messageconetet">您已经成功成为***的代asssssssssssssssssssssssssssssssssssss理用户...</p>
+                </div>
+                <img src="images/todetail.png" class="todetail" alt="">
+            </li>
+            <li>
+                <div>
+                    <div class="messagetit">
+                        <img src="images/readyread.png" class="readstate" alt="">
+                        <p><span>[已读]</span> 手机注册成功</p>
+                    </div>
+                    <p class="messageconetet">恭喜！您已经成功成为【APP】的用户...</p>
+                </div>
+                <img src="images/todetail.png" class="todetail" alt="">
+            </li> -->
+        </ul>
+    </section>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0]
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+        $(function(){
+            var length = $(".messagelists li").length;
+            if(length == 0){
+                $("section").css({"background":"url(images/nomessage.png) no-repeat center center","background-size":"80%"})
+            }
+        })
+    </script>
+</body>
+
+</html>

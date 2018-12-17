@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>开启阶段</title>
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="index">
+
+	<header>
+		<img src="images/left_nav.png" alt="">
+	</header>
+
+	<section>
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="banner1">
+							<img src="images/banner1.png" alt="">
+							<div class="banner_text">
+								<p>剩余时间</p>
+								<p>36.25h</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img src="images/banner2.png" alt="">
+							<div class="banner_text">
+								<p>剩余时间</p>
+								<p>36.25h</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<!--左箭头-->
+				<div class="swiper-button-next"></div>
+				<!--右箭头-->
+			</div>
+		</div>
+		
+		<div class="index_content">
+			<h5>接受任务</h5>
+			<p>开启阶段</p>
+			<ul>
+				<li>
+					<div class="licontent">
+						<div class="index_ioc"><img src="images/resource_ioc.png" alt=""></div>
+						<div class="res_txt">
+							<p>组建我的团队</p>
+							<p>您目前尚未组建自己的团队</p>
+						</div>
+					</div>
+					<div class="ioc_btn">
+						未开启
+					</div>
+				</li>
+			</ul>
+		</div>
+    </section>
+    
+    <section class="startzz" style="display:none">
+        <div class="startzz_content">
+            <div class="yqkq">
+                <div class="blackline"></div>
+                <p>邀请开启</p>
+            </div>
+            <p>推荐人ID：65846863</p>
+            <p>推荐团队：微商团队</p>
+            <p class="choose">选择你要组建的团队<img src="images/wenhao.png" alt=""></p>
+            <div class="choose_btn">
+                <ul>
+                    <li class="choosein">微商团队</li>
+                    <li>精英团队</li>
+                    <li>银牌团队</li>
+                    <li>金牌团队</li>
+                    <li>砖石团队</li>
+                </ul>
+			</div>
+			<p>代理产品：<span class="dailiprice">39.8</span></p>
+
+			<div class="xieyi">
+				<input class="surebtn" type="checkbox" name="" value="" /><a>阅读并同意《团队拓展用户协议》</a>
+			</div>
+
+			<div class="open_btn">
+				立即开启
+			</div>
+        </div>
+    </section>
+
+	<footer class="footer">
+		<ul>
+			<li><a><img src="images/footer_nav_index_on.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_shop.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_doing.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_mine.png" alt=""></a></li>
+		</ul>
+	</footer>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script>
+		let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+		let htmlDom = document.getElementsByTagName('html')[0];
+		htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		$(".ioc_btn").on('click',function(){
+			$("#startzz").css("display","flex")
+		})
+
+
+		$(".ioc_btn").on("click", function(e) {
+			$(".startzz").show()
+		})
+
+		$(".startzz").on('click',function(){
+			$(".startzz").hide()
+		})
+
+		$(".startzz_content").on('click',function(e){
+			e.preventDefault()
+		})
+
+	</script>
+</body>
+
+</html>

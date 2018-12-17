@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>左侧导航</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="leftmenu">
+    <section>
+        <div class="info">
+            <div class="infoimg"></div>
+            <div class="infotxt">
+                <p>亚特@118</p>
+                <p>ID：HG564984</p>
+            </div>
+        </div>
+        
+        <div class="leftline"></div>
+
+        <ul class="menucontent">
+            <li>
+                <img src="images/home.png" alt="">首页
+            </li>
+            <li>
+                <img src="images/my.png" alt="">个人中心
+            </li>
+            <li>
+                <img src="images/info.png" alt="">消息通知
+            </li>
+            <li>
+                <img src="images/setting.png" alt="">设置
+            </li>
+        </ul>
+        <div class="lxkf">
+            <p style="text-align:center;">***********</p>
+            <div class="kfline">
+                <div class="lxkfline"></div>
+                <p>联系客服</p>
+                <div class="lxkfline"></div>
+            </div>
+        </div>
+        <div class="kfline2"></div>
+        <div class="leftclose">关闭按钮<img src="images/close.png" alt=""></div>
+    </section>
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0]
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="index">
+
+	<header>
+		<img src="images/left_nav.png" alt="">
+	</header>
+
+	<section>
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="banner1">
+							<img src="images/banner1.png" alt="">
+							<div class="banner_text">
+								<p>剩余时间</p>
+								<p>36.25h</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div>
+							<img src="images/banner2.png" alt="">
+							<div class="banner_text">
+								<p>剩余时间</p>
+								<p>36.25h</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<!--左箭头-->
+				<div class="swiper-button-next"></div>
+				<!--右箭头-->
+			</div>
+		</div>
+		
+		<div class="index_content">
+			<h5>我的任务</h5>
+			<p>显示目前阶段6个字符</p>
+			<ul>
+				<li>
+					<div class="licontent">
+						<div class="index_ioc"><img src="images/resource_ioc.png" alt=""></div>
+						<div class="res_txt">
+							<p>整合资源</p>
+							<p>组建三个核心微商代理</p>
+						</div>
+					</div>
+					<div class="ok_ioc"><img src="images/green_ok.png" alt=""></div>
+				</li>
+				<li>
+					<div class="licontent">
+						<div class="index_ioc"><img src="images/share_ioc.png" alt=""></div>
+						<div class="res_txt">
+							<p>分享给朋友</p>
+							<p>将小程序<span>分享到微信群</span>，分享个人无效</p>
+						</div>
+					</div>
+					<div class="ioc_btn">
+							去分享
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<ul>
+			<li><a><img src="images/footer_nav_index_on.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_shop.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_doing.png" alt=""></a></li>
+			<li><a><img src="images/footer_nav_mine.png" alt=""></a></li>
+		</ul>
+	</footer>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script>
+		let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+		let htmlDom = document.getElementsByTagName('html')[0];
+		htmlDom.style.fontSize = htmlWidth / 10 + 'px';
+
+		var mySwiper = new Swiper('.swiper-container', {
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+
+</html>

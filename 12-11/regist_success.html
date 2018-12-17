@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>注册成功</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="regist_success">
+
+	<header class="header lineflex">
+		<p><img src="images/back.png" alt="">返回</p>
+		<p><img src="images/more.png" alt=""></p>
+	</header>
+
+    <section>
+        <div class="regist_success_content">
+            <img src="images/regist_ok.png" alt="">
+            <p class="success_text">恭喜您！注册成功</p>
+            <p>快去组团吧</p>
+            <div class="team_btn">开始组团</div>
+        </div>
+    </section>
+
+	<script>
+		let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+		let htmlDom = document.getElementsByTagName('html')[0]
+		htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+	</script>
+</body>
+
+</html>

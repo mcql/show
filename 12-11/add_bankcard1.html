@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        .buygoods {
+            margin-top: .266667rem;
+        }
+    </style>
+</head>
+
+<body class="mine">
+
+    <header class="header lineflex">
+        <p><img src="images/back.png" alt="">返回</p>
+        <p style="font-size: .48rem;">个人中心</p>
+        <p><img src="images/more.png" alt=""></p>
+    </header>
+
+    <section>
+        <div class="allmine">
+            <div class="mine_header_black bank">
+                <div class="cardname">
+                    <div><span>浦发银行</span><img src="images/kuaijie.png" class="kuaijie" alt=""></div><img src="images/citiao.png"
+                        class="citiao" alt="">
+                </div>
+                <p class="cardtype">储蓄卡</p>
+                <p class="cardnum">0000 000 0000 7639</p>
+            </div>
+        </div>
+        <div class="cardinput">
+            <h5>账户信息</h5>
+            <ul class="cardcontent">
+                <li>
+                    <p>持卡人</p><input type="text" name="" dir="rtl" id="" value="小包子">
+                </li>
+                <li>
+                    <p>卡号</p><input type="text" name="" dir="rtl" id="" value="9876765454324321">
+                </li>
+                <li>
+                    <p>使用日期</p><input type="text" name="" dir="rtl" id="" value="03/22">
+                </li>
+
+            </ul>
+        </div>
+        <div class="bankline"></div>
+        <div class="addcard">
+            <img src="images/add_card.png" alt="">添加银行卡
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <li><a><img src="images/footer_nav_index.png" alt=""></a></li>
+            <li><a><img src="images/footer_nav_shop.png" alt=""></a></li>
+            <li><a><img src="images/footer_nav_doing.png" alt=""></a></li>
+            <li><a><img src="images/footer_nav_mine_on.png" alt=""></a></li>
+        </ul>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script>
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        let htmlDom = document.getElementsByTagName('html')[0]
+        htmlDom.style.fontSize = htmlWidth / 10 + 'px'
+    </script>
+</body>
+
+</html>
